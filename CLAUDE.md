@@ -1,4 +1,4 @@
-# Rocket TUI — Project Guide
+# Rocket CLI — Project Guide
 
 ## Vision
 

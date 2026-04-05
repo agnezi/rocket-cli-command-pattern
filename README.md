@@ -1,4 +1,4 @@
-# 🚀 Rocket TUI
+# 🚀 Rocket CLI
 
 A terminal-based CLI where you send commands to a rocket and watch animated responses play out in real time. Every command triggers a unique ASCII animation sequence — from rolling the rocket out to the launch pad, fueling both propellants simultaneously, lifting off, and reaching orbit.
 
