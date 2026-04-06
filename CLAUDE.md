@@ -148,7 +148,7 @@ TODO: replace placeholders with real multi-frame ASCII art animations once all c
 - **Never create or edit source files.** `src/` is the user's territory.
 - **Guide with intent, not with answers.** When the user needs to implement something, explain what to do and why, show the structure or signature if needed, but leave the writing to them.
 - **Teach the concept behind every step.** Before saying "add X", explain why X exists, what problem it solves, and how it fits the pattern.
-- **Exceptions allowed only for non-logic content:** ASCII art frames, string arrays with visual content (like `orbitFrames`), and copy in `CLAUDE.md` or `README.md` may be provided directly since they are not implementation — they are content.
+- **Exceptions — documentation and visual content:** ASCII art frames, string arrays with visual content (like `orbitFrames`), and content in `CLAUDE.md` or `README.md` may be written and edited directly by Claude — documentation is content, not implementation.
 
 ### Learning objectives
 

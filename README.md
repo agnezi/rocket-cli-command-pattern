@@ -14,6 +14,32 @@ npm install
 npm run dev <command>
 ```
 
+## Local Installation
+
+To install the CLI globally on your machine, first build the project:
+
+```bash
+npm run build
+```
+
+Then link it globally with npm:
+
+```bash
+npm link
+```
+
+Now you can run the CLI from anywhere:
+
+```bash
+rocket help
+```
+
+To remove the global link:
+
+```bash
+npm unlink -g rocket-cli
+```
+
 ## Commands
 
 The rocket follows a strict launch sequence. Commands must be executed in order — the state machine enforces valid transitions and will reject commands that don't make sense for the current state.
