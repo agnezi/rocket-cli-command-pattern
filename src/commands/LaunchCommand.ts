@@ -7,10 +7,6 @@ export class LaunchCommand extends Command {
   name = 'launch'
   description = 'Ignites engines and lifts off'
 
-  constructor(private registry: Map<string, Command>) {
-    super()
-  }
-
   public async execute(
     rocket: Rocket,
     renderer: TerminalRenderer,

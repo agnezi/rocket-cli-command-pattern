@@ -7,10 +7,6 @@ export class RolloutCommand extends Command {
   name = 'rollout'
   description = 'Moves rocket to the launch pad'
 
-  constructor(private registry: Map<string, Command>) {
-    super()
-  }
-
   public async execute(
     rocket: Rocket,
     renderer: TerminalRenderer,

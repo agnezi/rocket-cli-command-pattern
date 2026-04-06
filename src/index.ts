@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import { CLI } from './cli/CLI.js'
 import { LaunchCommand } from './commands/LaunchCommand.js'
 import { HelpCommand } from './commands/HelpCommand.js'
@@ -11,31 +13,24 @@ import { ResetCommand } from './commands/ResetCommand.js'
 
 const registry = new Map()
 
-const help = new HelpCommand(registry)
-registry.set(help.name, help)
-
-const launch = new LaunchCommand(registry)
-registry.set(launch.name, launch)
-
-const rollout = new RolloutCommand(registry)
-registry.set(rollout.name, rollout)
-
-const fuel = new FuelCommand(registry)
-registry.set(fuel.name, fuel)
-
+const launch = new LaunchCommand()
+const rollout = new RolloutCommand()
 const status = new StatusCommand()
-registry.set(status.name, status)
-
 const abort = new AbortCommand()
-registry.set(abort.name, abort)
-
 const orbit = new OrbitCommand()
-registry.set(orbit.name, orbit)
-
-const demo = new DemoCommand(registry)
-registry.set(demo.name, demo)
-
 const reset = new ResetCommand()
+const help = new HelpCommand(registry)
+const fuel = new FuelCommand(registry)
+const demo = new DemoCommand(registry)
+
+registry.set(help.name, help)
+registry.set(launch.name, launch)
+registry.set(rollout.name, rollout)
+registry.set(fuel.name, fuel)
+registry.set(status.name, status)
+registry.set(abort.name, abort)
+registry.set(orbit.name, orbit)
+registry.set(demo.name, demo)
 registry.set(reset.name, reset)
 
 const cli = new CLI(registry)
