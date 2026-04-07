@@ -8,7 +8,7 @@ export class CommandParser {
 
     if (!name) {
       throw new Error(
-        'No command provided. Run with --help to see available commands.',
+        'No command provided. Run with "rocket help" to see available commands.',
       )
     }
 
